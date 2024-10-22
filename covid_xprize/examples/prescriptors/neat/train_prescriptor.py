@@ -84,7 +84,7 @@ ip_max_values_arr = np.array([IP_MAX_VALUES[ip] for ip in IP_COLS])
 eval_start_date = pd.to_datetime(EVAL_START_DATE, format='%Y-%m-%d')
 eval_end_date = pd.to_datetime(EVAL_END_DATE, format='%Y-%m-%d')
 
-# normalization
+# coefficients, nadir + utopia point initialization
 w = np.array([case_coeff, (1 - case_coeff)])
 nadir = np.array([2703.6, 520.1])
 utopia = np.array([2483.4, 0])
